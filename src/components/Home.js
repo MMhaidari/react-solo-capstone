@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountry } from '../redux/country/countrySlice';
 import List from './displayHome';
 import Header from './Header';
+import Navbar from './Navbar';
 import './Home.css';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar />
       <Header population={totalPopulation} />
       <List data={countries} />
     </div>
