@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountry } from '../redux/country/countrySlice';
 import List from './displayHome';
+import Header from './Header';
 import './Home.css';
 
 const Home = () => {
@@ -12,8 +13,14 @@ const Home = () => {
     dispatch(fetchCountry());
   }, [dispatch]);
 
+  let totalPopulation = 0;
+  for (let i = 0; i < countries.length; i += 1) {
+    totalPopulation += JSON.parse(countries[i].population);
+  }
+
   return (
     <div>
+      <Header population={totalPopulation} />
       <List data={countries} />
     </div>
   );
