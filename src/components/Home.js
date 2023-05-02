@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountry } from '../redux/country/countrySlice';
 import List from './displayHome';
+import './Home.css';
 
 const Home = () => {
   const { countries } = useSelector((store) => store.countries);
@@ -12,7 +13,7 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div className="content">
+    <div>
       <List data={countries} />
     </div>
   );
