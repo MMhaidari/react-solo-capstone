@@ -9,7 +9,8 @@ const initialState = {
 export const fetchCountry = createAsyncThunk('country/countryDataFecthed', async () => {
   try {
     const request = await fetch('https://restcountries.com/v3.1/subregion/Northern Europe');
-    const data = request.json();
+    const data = Object.entries(request.data)
+      .reduce((acc, [id, country]) => [...acc, { ...country, id }], []);
     return data;
   } catch (error) {
     return error;
@@ -21,8 +22,8 @@ const countriesSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchCountry.fulfilled());
+    builder.addCase(fetchCountry.fulfilled, (state, action) => action.payload);
   },
 });
 
-export default countriesSlice.reducers;
+export default countriesSlice.reducer;
