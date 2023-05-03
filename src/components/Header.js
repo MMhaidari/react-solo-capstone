@@ -15,7 +15,7 @@ function Header({ population, title = 'Northern Europe', flag }) {
           title
           }
         </p>
-        <p style={title !== 'Southern Asia' ? { alignSelf: 'flex-end' } : { alignSelf: 'flex-start' }} className="headerRightSubTitle">{`${Math.round(population / 1000000)} M  People`}</p>
+        <p style={title !== 'Northern Europe' ? { alignSelf: 'flex-end' } : { alignSelf: 'flex-start' }} className="headerRightSubTitle">{`${Math.round(population / 1000000)} M  People`}</p>
       </div>
     </div>
   );

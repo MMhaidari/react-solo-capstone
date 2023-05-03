@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
@@ -10,18 +11,20 @@ function DetailScreen() {
   const { state } = useLocation();
   const dispatch = useDispatch();
   const { country } = useSelector((state) => state.country);
+
   useEffect(() => {
     dispatch(getCountry(state.capital));
   }, [dispatch, state.capital]);
+
   let data = null;
   if (country.length > 0) {
-    // eslint-disable-next-line prefer-destructuring
     data = country[0];
   }
+
   return (
     <div style={{ width: '100%' }}>
       <Navbar country={data ? data.name.common : ''} />
-      <Header flag={data ? data.flags.png : ''} title={data ? data.name.common : 'Southern Asia'} population={data ? data.population : 0} />
+      <Header flag={data ? data.flags.png : ''} title={data ? data.name.common : 'Northern Europe'} population={data ? data.population : 0} />
       <div className="detailsBanner">
         Country info
       </div>
