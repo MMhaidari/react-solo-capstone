@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders with a different flag image 1`] = `
+<div
+  className="homeCard o"
+>
+  <div
+    className="homeCardTop"
+  >
+    <i
+      className="fa-regular fa-circle-right cardIcon"
+    />
+    <img
+      alt="Country Name"
+      className="homeCardTopImg"
+      src="https://example.com/different-flag.png"
+    />
+  </div>
+  <div
+    className="homeCardBottom"
+  >
+    <p
+      className="homeCardTitle"
+    >
+      Country Name
+    </p>
+    <p
+      className="homeCardNumber"
+    >
+      1000000 person
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Card renders with a large population 1`] = `
+<div
+  className="homeCard y"
+>
+  <div
+    className="homeCardTop"
+  >
+    <i
+      className="fa-regular fa-circle-right cardIcon"
+    />
+    <img
+      alt="Country Name"
+      className="homeCardTopImg"
+      src="https://example.com/flag.png"
+    />
+  </div>
+  <div
+    className="homeCardBottom"
+  >
+    <p
+      className="homeCardTitle"
+    >
+      Country Name
+    </p>
+    <p
+      className="homeCardNumber"
+    >
+      1000000000 person
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Card renders with blue color 1`] = `
+<div
+  className="homeCard b"
+>
+  <div
+    className="homeCardTop"
+  >
+    <i
+      className="fa-regular fa-circle-right cardIcon"
+    />
+    <img
+      alt="Country Name"
+      className="homeCardTopImg"
+      src="https://example.com/flag.png"
+    />
+  </div>
+  <div
+    className="homeCardBottom"
+  >
+    <p
+      className="homeCardTitle"
+    >
+      Country Name
+    </p>
+    <p
+      className="homeCardNumber"
+    >
+      1000000 person
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Card renders with long country name 1`] = `
+<div
+  className="homeCard g"
+>
+  <div
+    className="homeCardTop"
+  >
+    <i
+      className="fa-regular fa-circle-right cardIcon"
+    />
+    <img
+      alt="This is a very long country name that should wrap to multiple lines"
+      className="homeCardTopImg"
+      src="https://example.com/flag.png"
+    />
+  </div>
+  <div
+    className="homeCardBottom"
+  >
+    <p
+      className="homeCardTitle"
+    >
+      This is a very long country name that should wrap to multiple lines
+    </p>
+    <p
+      className="homeCardNumber"
+    >
+      1000000 person
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Card renders with red color 1`] = `
+<div
+  className="homeCard r"
+>
+  <div
+    className="homeCardTop"
+  >
+    <i
+      className="fa-regular fa-circle-right cardIcon"
+    />
+    <img
+      alt="Country Name"
+      className="homeCardTopImg"
+      src="https://example.com/flag.png"
+    />
+  </div>
+  <div
+    className="homeCardBottom"
+  >
+    <p
+      className="homeCardTitle"
+    >
+      Country Name
+    </p>
+    <p
+      className="homeCardNumber"
+    >
+      1000000 person
+    </p>
+  </div>
+</div>
+`;
