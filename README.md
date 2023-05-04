@@ -150,7 +150,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank [Microverse Inc](https://www.github.com/microverseinc) for providing the project requirements, the open API, and the wireframe.
+> I would like to thank [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) for providing the project design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
