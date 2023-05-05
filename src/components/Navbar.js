@@ -7,14 +7,15 @@ function Navbar({ country }) {
     <div className="navbar">
       {country && (
         <div className="navbar-right">
-          <i className="fa-solid fa-chevron-left" />
           <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+            <i className="fa-solid fa-chevron-left" />
+            {' '}
             Back
           </Link>
         </div>
       )}
       <div className="navbar-middle">
-        {country ? `Countries/${country}` : 'Northern Europian Countries'}
+        {country ? `Countries/${country}` : 'Independent Countries'}
       </div>
       <div className="navbar-left">
         <i className="fa-solid fa-microphone" />

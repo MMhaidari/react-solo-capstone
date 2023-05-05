@@ -22,9 +22,9 @@ function DetailScreen() {
   }
 
   return (
-    <div style={{ width: '100%' }}>
+    <div className="details-card" style={{ width: '100%' }}>
       <Navbar country={data ? data.name.common : ''} />
-      <Header flag={data ? data.flags.png : ''} title={data ? data.name.common : 'Northern Europe'} population={data ? data.population : 0} />
+      <Header flag={data ? data.flags.png : ''} title={data ? data.name.common : 'independent'} population={data ? data.population : 0} />
       <div className="detailsBanner">
         Country info
       </div>

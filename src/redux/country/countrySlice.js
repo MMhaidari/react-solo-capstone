@@ -4,13 +4,14 @@ import axios from 'axios';
 
 const initialState = {
   countries: [],
+  country: [],
   isLoading: 'idle',
   error: '',
 };
 
 export const fetchCountry = createAsyncThunk('country/countryDataFecthed', async () => {
   try {
-    const request = await axios.get('https://restcountries.com/v3.1/subregion/Northern Europe');
+    const request = await axios.get('https://restcountries.com/v3.1/independent');
     return request;
   } catch (error) {
     return error;

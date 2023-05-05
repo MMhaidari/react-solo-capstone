@@ -24,6 +24,31 @@
   height: 100vh;
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+  background-color: #fc5193;
+}
+
+.bi-search {
+  width: 5rem;
+  color: #fff;
+}
+
+.filter-input {
+  padding: 1rem 1rem 1rem 0;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+}
+
+.filter-input::placeholder {
+  color: #fff;
+}
+
 .homeScreen {
   display: flex;
   flex-direction: column;
@@ -143,6 +168,10 @@
   right: 0.5rem;
   color: var(--color-light);
   font-size: 1.3rem;
+}
+
+.details-card {
+  transition: all 1s ease-in-out;
 }
 
 .homeCardBottom {

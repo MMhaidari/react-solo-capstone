@@ -12,7 +12,10 @@ function Card({
       </div>
       <div className="homeCardBottom">
         <p className="homeCardTitle">{name}</p>
-        <p className="homeCardNumber">{`${population} person`}</p>
+        <p className="homeCardNumber">
+          {Math.round(population / 1000000)}
+          M  People
+        </p>
       </div>
     </div>
   );
