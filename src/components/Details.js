@@ -1,4 +1,3 @@
-/* eslint-disable prefer-destructuring */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
@@ -10,15 +9,15 @@ import { getCountry } from '../redux/country/detailsSlice';
 function DetailScreen() {
   const { state } = useLocation();
   const dispatch = useDispatch();
-  const { country } = useSelector((state) => state.country);
+  const [country] = useSelector((state) => state.country.country);
 
   useEffect(() => {
     dispatch(getCountry(state.capital));
   }, [dispatch, state.capital]);
 
   let data = null;
-  if (country.length > 0) {
-    data = country[0];
+  if (country) {
+    data = country;
   }
 
   return (

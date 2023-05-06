@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function DetailsCard({ title = 'none', value = 0, light }) {
   return (
@@ -14,5 +14,17 @@ function DetailsCard({ title = 'none', value = 0, light }) {
     </div>
   );
 }
+
+DetailsCard.propTypes = {
+  title: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  light: PropTypes.bool,
+};
+
+DetailsCard.defaultProps = {
+  title: 'none',
+  value: 0,
+  light: false,
+};
 
 export default DetailsCard;

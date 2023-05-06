@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Card({
   color, name, population, flag,
@@ -20,5 +20,12 @@ function Card({
     </div>
   );
 }
+
+Card.propTypes = {
+  color: PropTypes.arrayOf(PropTypes.string).isRequired,
+  name: PropTypes.string.isRequired,
+  population: PropTypes.number.isRequired,
+  flag: PropTypes.string.isRequired,
+};
 
 export default Card;

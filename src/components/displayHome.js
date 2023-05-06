@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Card from './Card';
 
@@ -65,5 +65,19 @@ function List({ data }) {
     </>
   );
 }
+
+List.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.shape({
+      common: PropTypes.string.isRequired,
+    }).isRequired,
+    population: PropTypes.number.isRequired,
+    flags: PropTypes.shape({
+      png: PropTypes.string.isRequired,
+    }).isRequired,
+    capital: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    ccn3: PropTypes.string.isRequired,
+  })).isRequired,
+};
 
 export default List;

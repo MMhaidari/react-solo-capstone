@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function Navbar({ country }) {
@@ -24,5 +24,13 @@ function Navbar({ country }) {
     </div>
   );
 }
+
+Navbar.propTypes = {
+  country: PropTypes.string,
+};
+
+Navbar.defaultProps = {
+  country: null,
+};
 
 export default Navbar;
