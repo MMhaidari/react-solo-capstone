@@ -142,7 +142,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100%;
   width: 100%;
   position: relative;
@@ -176,10 +175,12 @@
 
 .homeCardBottom {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+  width: 100%;
+  padding: 0.6rem;
   color: var(--color-light);
   gap: 0.5rem;
   text-transform: uppercase;
@@ -189,12 +190,10 @@
 
 .homeCardTitle {
   font-size: 1.8rem;
-  text-align: center;
 }
 
 .homeCardNumber {
   font-size: 1.4rem;
-  text-align: center;
 }
 
 .dark {

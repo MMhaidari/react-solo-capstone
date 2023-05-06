@@ -27,7 +27,8 @@ exports[`Card renders with a different flag image 1`] = `
     <p
       className="homeCardNumber"
     >
-      1000000 person
+      1
+      M
     </p>
   </div>
 </div>
@@ -60,7 +61,8 @@ exports[`Card renders with a large population 1`] = `
     <p
       className="homeCardNumber"
     >
-      1000000000 person
+      1000
+      M
     </p>
   </div>
 </div>
@@ -93,7 +95,8 @@ exports[`Card renders with blue color 1`] = `
     <p
       className="homeCardNumber"
     >
-      1000000 person
+      1
+      M
     </p>
   </div>
 </div>
@@ -126,7 +129,8 @@ exports[`Card renders with long country name 1`] = `
     <p
       className="homeCardNumber"
     >
-      1000000 person
+      1
+      M
     </p>
   </div>
 </div>
@@ -159,7 +163,8 @@ exports[`Card renders with red color 1`] = `
     <p
       className="homeCardNumber"
     >
-      1000000 person
+      1
+      M
     </p>
   </div>
 </div>

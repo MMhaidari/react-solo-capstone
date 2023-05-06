@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-param-reassign */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card';

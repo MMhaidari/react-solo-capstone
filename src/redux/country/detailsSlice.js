@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -27,10 +26,11 @@ export const detailsSlice = createSlice({
   reducers: {
   },
   extraReducers: (builder) => {
-    builder.addCase(getCountry.fulfilled, (state, action) => {
-      state.country = action.payload.data;
-      state.loading = 'fulfiled';
-    });
+    builder.addCase(getCountry.fulfilled, (state, action) => ({
+      ...state,
+      country: action.payload.data,
+      loading: 'fulfilled',
+    }));
   },
 });
 

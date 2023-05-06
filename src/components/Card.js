@@ -14,7 +14,7 @@ function Card({
         <p className="homeCardTitle">{name}</p>
         <p className="homeCardNumber">
           {Math.round(population / 1000000)}
-          M  People
+          M
         </p>
       </div>
     </div>

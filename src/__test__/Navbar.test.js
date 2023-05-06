@@ -22,6 +22,6 @@ describe('Navbar component', () => {
       </Router>,
     );
 
-    expect(getByText('Northern Europian Countries')).toBeInTheDocument();
+    expect(getByText('Independent Countries')).toBeInTheDocument();
   });
 });
