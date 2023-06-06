@@ -15,11 +15,11 @@ describe('Card', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders with blue color', () => {
+  it('renders with long country name', () => {
     const tree = renderer.create(
       <Card
-        color="blue"
-        name="Country Name"
+        color="green"
+        name="This is a very long country name that should wrap to multiple lines"
         population={1000000}
         flag="https://example.com/flag.png"
       />,
@@ -27,11 +27,11 @@ describe('Card', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders with long country name', () => {
+  it('renders with blue color', () => {
     const tree = renderer.create(
       <Card
-        color="green"
-        name="This is a very long country name that should wrap to multiple lines"
+        color="blue"
+        name="Country Name"
         population={1000000}
         flag="https://example.com/flag.png"
       />,
